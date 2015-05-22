@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+  var $ = jQuery.noConflict();
+  $(document).ready(function() { 
+      $('#myCarousel').carousel({ interval: 2000, cycle: true, pause: false });
+  }); 
+</script>
+
+<body>
+<div class="row-fluid" id="slide-show">
+	<div id="myCarousel" class="carousel slide container carousel-fade">
+		<%= image_tag("vinyl.png", alt: "VinylProfi",size: "400x400",style:"position:absolute;z-index:2;left:0;width:50%") %>
+		<div class="carousel-inner">
+		   	<div class="item active">
+				<%= image_tag("IMG_2c.jpg", class: "image-carousel") %>
+			</div>
+			<div class="item">
+				<%= image_tag("IMG_1c.jpg", class: "image-carousel") %>
+			</div>		
+			<div class="item">
+				<%= image_tag("IMG_3c.jpg", class: "image-carousel") %>
+			</div>
+			<div class="item">
+				<%= image_tag("IMG_4c.jpg", class: "image-carousel") %>
+		    </div>
+			<div class="item">
+				<%= image_tag("IMG_5c.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_6c.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_7c.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_13.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_14.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_15.jpg", class: "image-carousel") %>
+		    </div>
+		    <div class="item">
+				<%= image_tag("IMG_17.jpg", class: "image-carousel") %>
+		    </div>
+		</div>
+	</div>
+	<div style="width:24%;height:100%;right:0;top:0;position:absolute;">
+		<%= render "static_pages/menu" %>
+	</div>
+</div>
+
+	<div class="row-fluid okleika">
+		<%= image_tag("car1.png", alt: "VinylProfi",class:"img-circle", style:"width:20%;position:absolute;") %>
+		<div style="left:25%;position:relative;width:73%;">
+			<h1>Оклейка автомобилей плёнкой – гарантия блестящего результата</h1>
+			<h3>
+				Предлагаемая автовладельцам оклейка авто винилом открывает широкие возможности по созданию выразительного облика транспортного средства,
+				одновременно формируя новый уровень защиты от внешних воздействий.
+				Сегодня в нашей мастерской вам предлагаются следующие виды работ:
+			</h3>
+			
+			<a href="/tonirovka" style="text-decoration: none">
+			<div class="skill orange">Тонировка автомобиля</div>
+			</a>
+			
+			<a href="/avtovinyl" style="text-decoration: none">
+			<div class="skill red">Оклейка автомобиля виниловой плёнкой</div>
+			</a>
+
+			<a href="/antigraviynaya_zashita" style="text-decoration: none">
+			<div class="skill blue">Защита кузова автомобиля плёнкой</div>
+			</a>
+			<h3>
+				Оклейка машин виниловой плёнкой позволяет не только защитить элементы кузова и стёкол, но и скрыть существующие дефекты в виде сколов и царапин.<br>
+				Оклейка автомобиля плёнкой, цена которой зависит от материала и объёма работ, в нашем сервисном центре проводится на высшем уровне с финальным контролем над результатами профессиональной ответственной работы.
+			</h3>
+		</div>
+	</div>
+
+	<div class="row-fluid okleika">
+		<div style="position:relative;width:100%;">
+			<h1>Оклейка автомобиля виниловой плёнкой – секреты мастерства</h1>
+			<h3>
+				Несмотря на то, что технология оклейки автомобиля плёнкой представляет собой универсальный алгоритм, каждая мастерская имеет в запасе свои разработки,
+				позволяющие предлагать заказчику идеальный виниловый тюнинг.<br><br>
+				<strong>Предлагаемая оклейка машин винилом ведётся на основе следующих принципов:</strong><br><br>
+				<ul>
+					<li>Тщательный подбор виниловой плёнки с учётом существующих требований ГОСТа. В нашем сервисном центре используются только фирменные плёнки западного производства, поставляемые проверенными партнёрами</li>
+					<li>Идеальная подготовка автомобиля – помывка, просушка, обработка специальными составами, удаляющими мельчайшие частицы грязи и жира</li>
+					<li>Точный предварительный раскрой плёнки в соответствии со сделанными замерами, позволяющий сэкономить на отходах</li>
+					<li>Создание в некоторых случаях компьютерной 3D модели для того, чтобы владелец мог оценить перспективу выбранного цвета</li>
+					<li>Проверка каждого участка с устранением малейших дефектов</li>
+				 </ul>
+				Обтяжка авто виниловой плёнкой в нашем сервисе – это творческий процесс, который реализуется на основе филигранного мастерства задействованных мастеров. Обратившись в наш сервисный центр, вы сможете оценить эффективность оригинальных разработок и наработанных решений, придающих виниловому тюнингу наглядную безупречность.
+			</h3>
+		</div>
+	</div>
+	<section class="row-fluid" id="slideshow">
+		<a href="<%= image_path("IMG_1c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_1mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow",style:"border-radius:15px 0 0 15px") %>
+		 </a>
+		<a href="<%= image_path("IMG_2c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_2mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_3c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_3mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_4c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_4mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_5c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_5mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_6c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_6mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_7c.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_7mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_13.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_13mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_15.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_15mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow") %>
+		 </a>
+		 <a href="<%= image_path("IMG_14.jpg") %>" style="text-decoration:none"
+		alt="oklejka_avtomobilej_plyonkoj" class="image_gallery" rel="gallery">
+		 	<%= image_tag("IMG_14mini.jpg",alt:"oklejka_avtomobilej_plyonkoj",class:"image_slideshow",style:"border-radius:0 15px 15px 0") %>
+		 </a>
+	</section>
+	<%= render "static_pages/map" %>
+</body>

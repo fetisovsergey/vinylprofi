@@ -1,0 +1,35 @@
+<% provide(:title, 'Тонировка') %>
+<!DOCTYPE html>
+<html>
+<body>
+<div class="row-fluid" id="slide-show">
+	<div class="row-fluid opportunity">
+		<div style="text-align:center;height:40px;">
+			
+			<a href="/tonirovka" alt="Тонировка" style="text-decoration:none">
+			<button class="btn btn_avtovinyl passive_button btn-inverse" type="button" id="tonirovka_button" style="width:25%">
+	  			Тонировка
+	  		</button>
+			</a>
+			
+			<a href="/tonirovka_fonarej" alt="Тонировка фонарей" style="text-decoration:none">
+	  		<button class="btn btn_avtovinyl active_button btn-inverse" type="button" id="tonirovka_fonar_button" style="width:40%">
+	  			Тонировка фонарей
+	  		</button>
+			</a>
+			
+			<a href="/tonirovka_prices" alt="Тонировка Цены" style="text-decoration:none">
+	  		<button class="btn btn_avtovinyl passive_button btn-inverse" type="button" id="tonirovka_prices_button" style="width:25%">
+	  			Цены
+	  		</button>
+			</a>
+			
+		</div><br>
+
+		<%= render "static_pages/tonirovka_fonar" %>
+	</div>
+	<div style="width:24%;height:100%;right:0;top:0;position:absolute;">
+	<%= render "static_pages/menu" %>
+	</div>
+</div>
+</body>

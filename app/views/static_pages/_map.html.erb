@@ -1,0 +1,23 @@
+<script type="text/javascript">
+  $(document).ready(function() { 
+       L.mapbox.accessToken = 'pk.eyJ1IjoiZmV0aXNvdnNlcmdleSIsImEiOiI0X09HSjZFIn0.aU0mwcW1UZIj5ZWVBFkRdQ';
+            var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([55.8293,37.640], 15);
+          L.control.layers({
+          'Схема': L.mapbox.tileLayer('examples.map-i86nkdio').addTo(map),
+          'Спутник': L.mapbox.tileLayer('examples.map-igb471ik')
+          }).addTo(map);
+		  map.scrollWheelZoom.disable();
+          var marker = L.marker([55.829309, 37.647239],
+          {
+          icon: L.mapbox.marker.icon({'marker-color': '#290A00','marker-symbol':'circle-stroked','marker-size': 'large'})
+          }).addTo(map);
+  }); 
+</script>
+<div id="map_area">
+	<div id="address">
+		<h2>Контактная информация</h2>
+	    <h4>Москва, улица Сергея Эйзенштейна, дом 1</h4>
+	    <h4 style="font-size:2em">8 (925) 664-62-29</h4>
+    </div>
+<div id="map"></div>
+

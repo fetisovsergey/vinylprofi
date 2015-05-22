@@ -1,0 +1,29 @@
+<% provide(:title, 'Зашита автомобиля') %>
+<!DOCTYPE html>
+<html>
+<body>
+<div class="row-fluid" id="slide-show">
+	<div class="row-fluid opportunity">
+		<div style="text-align:center;height:40px;">
+			
+			<a href="/antigraviynaya_zashita" alt="Антигравийная защита" style="text-decoration:none">
+			<button class="btn btn_avtovinyl passive_button btn-inverse" type="button" id="zashita_button" style="width:45%">
+	  			Защита кузова пленкой
+	  		</button>
+			</a>
+			
+			<a href="/bronirovanie_stekol" alt="Бронирование стекол" style="text-decoration:none">
+	  		<button class="btn btn_avtovinyl active_button btn-inverse" type="button" id="bronirovanie_button" style="width:45%">
+	  			Бронирование стекол
+	  		</button>
+			</a>
+			
+		</div><br>
+
+		<%= render "static_pages/bronirovanie_stekol" %>
+	</div>
+	<div style="width:24%;height:100%;right:0;top:0;position:absolute;">
+	<%= render "static_pages/menu" %>
+	</div>
+</div>
+</body>

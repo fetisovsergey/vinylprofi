@@ -1,0 +1,117 @@
+<h1>Расчет стоимости тонировки автомобиля</h1>
+<div style="position:relative">
+    <div id="car_icons">
+        <button id="middle_class" class="car_icon car_icon_passive">
+            <%= image_tag("middle.png") %>
+            Средний класс
+        </button>
+        <button id="business_class" class="car_icon car_icon_passive">
+            <%= image_tag("business.png") %>
+            Бизнес класс
+        </button>
+        <button id="premium_class" class="car_icon car_icon_passive">
+            <%= image_tag("luxury.png") %>
+            Премиум класс
+        </button>
+        <button id="crossover_class" class="car_icon car_icon_passive">
+            <%= image_tag("crossover.png") %>
+            Кроссовер
+        </button>
+        <button id="offroad_class" class="car_icon car_icon_passive">
+            <%= image_tag("offroad.png") %>
+            Внедорожник
+        </button>
+        <button id="minivan_class" class="car_icon car_icon_passive">
+		    <%= image_tag("minivan.png") %>
+            Минивэн
+        </button>
+    </div>
+	
+    <div id="choose_plenka">
+        Выберите пленку:<br>
+		<div style="display:inline-block;width:27%">
+			<h3 style="text-align:center;font-weight:600">
+				Ударопрочная
+	        	<div id="udar_plenka" style="width:80%" class="plenka passive_button btn btn-inverse">
+					<%= image_tag("suntek.jpg") %>
+	        	</div>
+			</h3>
+		</div>
+
+        <div style="display:inline-block;width:27%">
+            <h3 style="text-align:center;font-weight:600">
+                Классическая
+                <div id="aswf_plenka" style="width:80%" class="plenka passive_button btn btn-inverse">
+                    <%= image_tag("aswf_logo.jpg") %>
+                </div>
+            </h3>
+            <h3 style="text-align:center;font-weight:600">
+                Зеркальная
+                <div id="infinity_plenka" style="width:80%" class="plenka passive_button btn btn-inverse">
+                   <%= image_tag("infinity_logo.png") %>
+                </div>
+            </h3>
+        </div>
+
+
+		<div style="display:inline-block;width:27%">
+			<h3 style="text-align:center;font-weight:600">
+				Атермальная
+	        	<div id="atermal_plenka" style="width:80%" class="plenka passive_button btn btn-inverse">
+					<%= image_tag("ultravision_logo.png") %>
+	        	</div>
+			</h3>
+		</div>
+    </div>	
+
+	<div id="car_top">
+        <div id="rear_button" class="choose_window btn btn-success">
+            Заднее стекло
+        </div>
+		<div id="front_button" class="choose_window btn btn-success">
+            Лобовое стекло
+        </div>
+        <br>
+        <%= image_tag("top_car_clear.png",id:"main_car",class:"car_top",style:"position:relative;opacity:1") %>
+        <%= image_tag("top_car_front.png",id:"front",class:"car_top") %>
+        <%= image_tag("top_car_rear.png",id:"rear",class:"car_top") %>
+        <%= image_tag("top_car_rearback.png",id:"rearback",class:"car_top") %>
+        <%= image_tag("top_car_frontback.png",id:"frontback",class:"car_top") %>
+        <br>
+        <div id="rearback_button" class="choose_window btn btn-success">
+            Задние боковые 
+        </div>
+        <div id="frontback_button" class="choose_window btn btn-success">
+            Передние боковые 
+        </div>
+        <span id="price"></span>
+    </div>
+
+    <div id="text_plenka">
+        Выберите класс автомобиля
+    </div>
+</div>	
+    <br><br>
+	<table class="table table-striped table-condensed">
+    <thead>
+        <tr>
+            <th colspan="2" style="width:40%">Растонирование автомобиля</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Весь автомобиль</td>
+            <td>2000 р.</td>
+        </tr>
+        <tr>
+            <td>Заднее стекло</td>
+            <td>1000 р.</td>
+        </tr>
+        <tr>
+            <td>Боковое стекло</td>
+            <td>250 р.</td>
+        </tr>
+    </tbody>
+	</table>
+
+	<h6 style="font-size:1.1em;color:#000000">Автомобили типа универсал +10% к стоимости тонирования.</h6>
